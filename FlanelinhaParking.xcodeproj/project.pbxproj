@@ -72,15 +72,95 @@
 		4157A12C22797F44008657A2 /* FlanelinhaParking */ = {
 			isa = PBXGroup;
 			children = (
-				4157A12D22797F44008657A2 /* AppDelegate.swift */,
-				4157A12F22797F44008657A2 /* ViewController.swift */,
-				4157A13122797F44008657A2 /* Main.storyboard */,
 				4157A13722797F47008657A2 /* Assets.xcassets */,
-				4157A13922797F47008657A2 /* LaunchScreen.storyboard */,
 				4157A13C22797F47008657A2 /* Info.plist */,
-				4157A13422797F44008657A2 /* FlanelinhaParking.xcdatamodeld */,
+				A14B9B42229203CD00E9E0DE /* Resources */,
+				A14B9B43229203DB00E9E0DE /* Sources */,
+				A14B9B44229203E800E9E0DE /* Storyboards */,
+				A14B9B45229203F500E9E0DE /* Supporting Files */,
+				4157A12F22797F44008657A2 /* ViewController.swift */,
 			);
 			path = FlanelinhaParking;
+			sourceTree = "<group>";
+		};
+		A14B9B42229203CD00E9E0DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A14B9B43229203DB00E9E0DE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A14B9B462292045700E9E0DE /* Data */,
+				A14B9B472292045D00E9E0DE /* View Controllers */,
+				A14B9B482292046C00E9E0DE /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A14B9B44229203E800E9E0DE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4157A13922797F47008657A2 /* LaunchScreen.storyboard */,
+				4157A13122797F44008657A2 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A14B9B45229203F500E9E0DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4157A12D22797F44008657A2 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A14B9B462292045700E9E0DE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A14B9B492292048000E9E0DE /* Core Data */,
+				A14B9B4A2292048800E9E0DE /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A14B9B472292045D00E9E0DE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A14B9B482292046C00E9E0DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A14B9B4B229204D800E9E0DE /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A14B9B492292048000E9E0DE /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4157A13422797F44008657A2 /* FlanelinhaParking.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		A14B9B4A2292048800E9E0DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A14B9B4B229204D800E9E0DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D6C2CC60DEB3A6C80378718E /* Frameworks */ = {
@@ -338,13 +418,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LFG72U4M9F;
+				DEVELOPMENT_TEAM = KKMX66NGA5;
 				INFOPLIST_FILE = FlanelinhaParking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raulvbrito.FlanelinhaParking;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.flanelinha.FlanelinhaParking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,13 +437,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LFG72U4M9F;
+				DEVELOPMENT_TEAM = KKMX66NGA5;
 				INFOPLIST_FILE = FlanelinhaParking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raulvbrito.FlanelinhaParking;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.flanelinha.FlanelinhaParking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
