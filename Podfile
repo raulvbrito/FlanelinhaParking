@@ -6,5 +6,15 @@ target 'FlanelinhaParking' do
   use_frameworks!
 
   # Pods for FlanelinhaParking
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'MapboxDirections.swift'
+  pod 'MapboxGeocoder.swift'
+  pod 'SCLAlertView'
+  pod 'Tailor'
 
 end

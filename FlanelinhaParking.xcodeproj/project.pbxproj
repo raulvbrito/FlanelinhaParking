@@ -32,7 +32,6 @@
 		A1BFC72A229737DC00D79593 /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC729229737DC00D79593 /* VehicleTableViewCell.swift */; };
 		A1BFC72C22973C1600D79593 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */; };
 		A1BFC7302297412400D79593 /* ParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */; };
-		A1BFC734229772BE00D79593 /* PlayerMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC733229772BE00D79593 /* PlayerMarkerView.xib */; };
 		A1BFC736229772EF00D79593 /* SelectedParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		A1BFC729229737DC00D79593 /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
 		A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
 		A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingMarkerView.xib; sourceTree = "<group>"; };
-		A1BFC733229772BE00D79593 /* PlayerMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerMarkerView.xib; sourceTree = "<group>"; };
 		A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedParkingMarkerView.xib; sourceTree = "<group>"; };
 		F1839212FD4733BDA85004CD /* Pods-FlanelinhaParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,7 +187,6 @@
 				A1BFC727229737AE00D79593 /* SelectedParkingMarkerView.swift */,
 				A1BFC729229737DC00D79593 /* VehicleTableViewCell.swift */,
 				A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */,
-				A1BFC733229772BE00D79593 /* PlayerMarkerView.xib */,
 				A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */,
 			);
 			path = Views;
@@ -242,6 +239,8 @@
 				4157A12622797F44008657A2 /* Sources */,
 				4157A12722797F44008657A2 /* Frameworks */,
 				4157A12822797F44008657A2 /* Resources */,
+				35C17E8E1AC4129A747D4C78 /* [CP] Embed Pods Frameworks */,
+				74EFBEBC06F698840DF165B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,7 +293,6 @@
 				4157A13822797F47008657A2 /* Assets.xcassets in Resources */,
 				A1BFC736229772EF00D79593 /* SelectedParkingMarkerView.xib in Resources */,
 				4157A13322797F44008657A2 /* Main.storyboard in Resources */,
-				A1BFC734229772BE00D79593 /* PlayerMarkerView.xib in Resources */,
 				A1BFC7302297412400D79593 /* ParkingMarkerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +300,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		35C17E8E1AC4129A747D4C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		47BF031026FA08F080516568 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +337,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74EFBEBC06F698840DF165B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

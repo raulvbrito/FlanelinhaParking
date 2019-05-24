@@ -17,10 +17,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tn-pe-5V0">
-                    <rect key="frame" x="0.0" y="0.0" width="115" height="29"/>
+                    <rect key="frame" x="0.0" y="0.0" width="36.5" height="29"/>
                     <subviews>
-                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qhs-Wc-Z9R">
-                            <rect key="frame" x="115" y="0.0" width="29" height="29"/>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qhs-Wc-Z9R" userLabel="Parking Sign View">
+                            <rect key="frame" x="0.0" y="0.0" width="29" height="29"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="29" id="r65-ex-SJb"/>
@@ -31,8 +31,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cF-iF-tfG">
-                            <rect key="frame" x="123.5" y="2.5" width="12" height="24"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cF-iF-tfG" userLabel="Parking Sign Label">
+                            <rect key="frame" x="8.5" y="2.5" width="12" height="24"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -40,15 +40,14 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="Qhs-Wc-Z9R" firstAttribute="leading" secondItem="9tn-pe-5V0" secondAttribute="trailing" id="0GI-hl-LaK"/>
+                        <constraint firstItem="Qhs-Wc-Z9R" firstAttribute="leading" secondItem="9tn-pe-5V0" secondAttribute="leading" id="0GI-hl-LaK"/>
                         <constraint firstItem="Qhs-Wc-Z9R" firstAttribute="top" secondItem="9tn-pe-5V0" secondAttribute="top" id="HwL-PG-imB"/>
-                        <constraint firstItem="Qhs-Wc-Z9R" firstAttribute="centerY" secondItem="6cF-iF-tfG" secondAttribute="centerY" id="TkF-eF-fYa"/>
-                        <constraint firstAttribute="trailing" secondItem="Qhs-Wc-Z9R" secondAttribute="trailing" constant="7" id="a9n-Ha-cJX"/>
-                        <constraint firstItem="Qhs-Wc-Z9R" firstAttribute="centerX" secondItem="6cF-iF-tfG" secondAttribute="centerX" id="exV-AV-clr"/>
+                        <constraint firstItem="6cF-iF-tfG" firstAttribute="centerY" secondItem="Qhs-Wc-Z9R" secondAttribute="centerY" id="TkF-eF-fYa"/>
+                        <constraint firstItem="6cF-iF-tfG" firstAttribute="centerX" secondItem="Qhs-Wc-Z9R" secondAttribute="centerX" id="exV-AV-clr"/>
                         <constraint firstItem="Qhs-Wc-Z9R" firstAttribute="centerY" secondItem="9tn-pe-5V0" secondAttribute="centerY" id="huN-Fy-YkR"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 13,00/h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR4-fC-YEN">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 13,00/h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR4-fC-YEN" userLabel="Price Label">
                     <rect key="frame" x="43.5" y="6.5" width="64.5" height="16"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,6 +56,7 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="wR4-fC-YEN" firstAttribute="leading" secondItem="9tn-pe-5V0" secondAttribute="trailing" constant="7" id="1kh-nz-Y60"/>
                 <constraint firstItem="wR4-fC-YEN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3Sh-fI-EI6"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wR4-fC-YEN" secondAttribute="trailing" constant="7" id="I0f-6u-Abv"/>
                 <constraint firstItem="9tn-pe-5V0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LsC-hW-gr7"/>
