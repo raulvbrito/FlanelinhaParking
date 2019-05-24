@@ -515,7 +515,7 @@
         <!--Estacionamentos-->
         <scene sceneID="u5D-lD-tTu">
             <objects>
-                <viewController id="vKl-U0-KB1" customClass="VehiclesViewController" customModule="FlanelinhaParking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vKl-U0-KB1" customClass="ParkingsViewController" customModule="FlanelinhaParking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o8Y-N6-1ZT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -524,7 +524,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="VehicleTableViewCell" textLabel="94L-Mt-sod" detailTextLabel="aFi-ek-jYV" style="IBUITableViewCellStyleValue1" id="Td2-dY-zHq" customClass="VehicleTableViewCell" customModule="FlanelinhaParking" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="VehicleTableViewCell" textLabel="94L-Mt-sod" detailTextLabel="aFi-ek-jYV" style="IBUITableViewCellStyleValue1" id="Td2-dY-zHq" customClass="ParkingTableViewCell" customModule="FlanelinhaParking" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Td2-dY-zHq" id="x4z-oa-FZU">
@@ -578,7 +578,7 @@
         <!--Estacionamento-->
         <scene sceneID="FXB-yJ-qLR">
             <objects>
-                <viewController id="4Af-bg-1mk" sceneMemberID="viewController">
+                <viewController id="4Af-bg-1mk" customClass="ParkingViewController" customModule="FlanelinhaParking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DB7-Ae-H1B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

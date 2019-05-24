@@ -10,7 +10,7 @@ import UIKit
 
 class ParkingTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var vehicleNameLabel: UILabel!
-    @IBOutlet weak var vehiclePlateLabel: UILabel!
+    @IBOutlet weak var parkingNameLabel: UILabel!
+    @IBOutlet weak var parkingAddressLabel: UILabel!
     
 }

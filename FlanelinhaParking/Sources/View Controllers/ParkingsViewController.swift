@@ -9,20 +9,20 @@
 import UIKit
 import CoreData
 
-class VehiclesViewController: UIViewController {
+class ParkingsViewController: UIViewController {
     
-    var fetchedResultsController: NSFetchedResultsController<Vehicle>!
+    var fetchedResultsController: NSFetchedResultsController<Parking>!
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadVehicles()
+        loadParkings()
     }
     
-    func loadVehicles() {
-        let fetchRequest: NSFetchRequest<Vehicle> = Vehicle.fetchRequest()
+    func loadParkings() {
+        let fetchRequest: NSFetchRequest<Parking> = Parking.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
@@ -37,13 +37,13 @@ class VehiclesViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = sender as? IndexPath, let vehicleVC = segue.destination as? VehicleViewController {
-            vehicleVC.vehicle = fetchedResultsController.object(at: indexPath)
+        if let indexPath = sender as? IndexPath, let parkingVC = segue.destination as? ParkingViewController {
+            parkingVC.parking = fetchedResultsController.object(at: indexPath)
         }
     }
     
     @IBAction func addVehicle(_ sender: Any) {
-        self.performSegue(withIdentifier: "vehicleSegue", sender: nil)
+        self.performSegue(withIdentifier: "parkingSegue", sender: nil)
     }
     
     @IBAction func close(_ sender: Any) {
@@ -51,18 +51,18 @@ class VehiclesViewController: UIViewController {
     }
 }
 
-extension VehiclesViewController: UITableViewDataSource, UITableViewDelegate {
+extension ParkingsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fetchedResultsController.fetchedObjects?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VehicleTableViewCell", for: indexPath) as? VehicleTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ParkingTableViewCell", for: indexPath) as? ParkingTableViewCell
         
-        let vehicle = fetchedResultsController.object(at: indexPath)
-        cell?.vehicleNameLabel.text = vehicle.name
-        cell?.vehiclePlateLabel.text = vehicle.plate
+        let parking = fetchedResultsController.object(at: indexPath)
+        cell?.parkingNameLabel.text = parking.name
+        cell?.parkingAddressLabel.text = parking.address
         
         return cell!
     }
@@ -70,19 +70,19 @@ extension VehiclesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        self.performSegue(withIdentifier: "vehicleSegue", sender: indexPath)
+        self.performSegue(withIdentifier: "parkingSegue", sender: indexPath)
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let vehicle = fetchedResultsController.object(at: indexPath)
-            context.delete(vehicle)
+            let parking = fetchedResultsController.object(at: indexPath)
+            context.delete(parking)
             try? context.save()
         }
     }
 }
 
-extension VehiclesViewController: NSFetchedResultsControllerDelegate {
+extension ParkingsViewController: NSFetchedResultsControllerDelegate {
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.reloadData()
     }

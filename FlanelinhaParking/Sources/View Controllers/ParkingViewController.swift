@@ -11,26 +11,26 @@ import CoreData
 
 class ParkingViewController: UIViewController {
     
-    var vehicle: Parking?
+    var parking: Parking?
     
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var plateTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let vehicle = vehicle {
-            nameTextField.text = vehicle.name
-            plateTextField.text = vehicle.plate
+        if let parking = parking {
+            nameTextField.text = parking.name
+            addressTextField.text = parking.address
         }
     }
     
     @IBAction func save(_ sender: Any) {
-        if vehicle == nil {
-            vehicle = Parking(context: context)
+        if parking == nil {
+            parking = Parking(context: context)
         }
-        vehicle?.name = nameTextField.text
-        vehicle?.plate = plateTextField.text
+        parking?.name = nameTextField.text
+        parking?.address = addressTextField.text
         
         do {
             try context.save()
