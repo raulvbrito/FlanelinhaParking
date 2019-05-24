@@ -14,6 +14,26 @@
 		4157A13622797F44008657A2 /* FlanelinhaParking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4157A13422797F44008657A2 /* FlanelinhaParking.xcdatamodeld */; };
 		4157A13822797F47008657A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4157A13722797F47008657A2 /* Assets.xcassets */; };
 		4157A13B22797F47008657A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4157A13922797F47008657A2 /* LaunchScreen.storyboard */; };
+		A1BFC70A2297307800D79593 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7092297307700D79593 /* Location.swift */; };
+		A1BFC70C2297314500D79593 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC70B2297314500D79593 /* Player.swift */; };
+		A1BFC70E2297317800D79593 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC70D2297317800D79593 /* Vehicle.swift */; };
+		A1BFC710229731CD00D79593 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC70F229731CD00D79593 /* AboutViewController.swift */; };
+		A1BFC712229731FA00D79593 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC711229731FA00D79593 /* MapViewController.swift */; };
+		A1BFC7142297324A00D79593 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7132297324A00D79593 /* ProfileViewController.swift */; };
+		A1BFC7162297339200D79593 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7152297339200D79593 /* VehiclesViewController.swift */; };
+		A1BFC7182297341A00D79593 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7172297341A00D79593 /* VehicleViewController.swift */; };
+		A1BFC71C229734A600D79593 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC71B229734A600D79593 /* LocationTableViewCell.swift */; };
+		A1BFC71E229734DA00D79593 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC71D229734DA00D79593 /* OptionCollectionViewCell.swift */; };
+		A1BFC720229734FF00D79593 /* ParkingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC71F229734FF00D79593 /* ParkingCollectionViewCell.swift */; };
+		A1BFC7222297353700D79593 /* CurrentLocationMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7212297353700D79593 /* CurrentLocationMarkerView.swift */; };
+		A1BFC7242297356700D79593 /* ParkingMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7232297356700D79593 /* ParkingMarkerView.swift */; };
+		A1BFC7262297375C00D79593 /* PlayerMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7252297375C00D79593 /* PlayerMarkerView.swift */; };
+		A1BFC728229737AE00D79593 /* SelectedParkingMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC727229737AE00D79593 /* SelectedParkingMarkerView.swift */; };
+		A1BFC72A229737DC00D79593 /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC729229737DC00D79593 /* VehicleTableViewCell.swift */; };
+		A1BFC72C22973C1600D79593 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */; };
+		A1BFC7302297412400D79593 /* ParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */; };
+		A1BFC734229772BE00D79593 /* PlayerMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC733229772BE00D79593 /* PlayerMarkerView.xib */; };
+		A1BFC736229772EF00D79593 /* SelectedParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +47,26 @@
 		4157A13C22797F47008657A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA358310534C353CE2D0EB9 /* Pods-FlanelinhaParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.release.xcconfig"; sourceTree = "<group>"; };
 		7CC382D27D3F6F430E688335 /* Pods_FlanelinhaParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlanelinhaParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BFC7092297307700D79593 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A1BFC70B2297314500D79593 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A1BFC70D2297317800D79593 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		A1BFC70F229731CD00D79593 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A1BFC711229731FA00D79593 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A1BFC7132297324A00D79593 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A1BFC7152297339200D79593 /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
+		A1BFC7172297341A00D79593 /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		A1BFC71B229734A600D79593 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		A1BFC71D229734DA00D79593 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1BFC71F229734FF00D79593 /* ParkingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1BFC7212297353700D79593 /* CurrentLocationMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationMarkerView.swift; sourceTree = "<group>"; };
+		A1BFC7232297356700D79593 /* ParkingMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMarkerView.swift; sourceTree = "<group>"; };
+		A1BFC7252297375C00D79593 /* PlayerMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMarkerView.swift; sourceTree = "<group>"; };
+		A1BFC727229737AE00D79593 /* SelectedParkingMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedParkingMarkerView.swift; sourceTree = "<group>"; };
+		A1BFC729229737DC00D79593 /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
+		A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
+		A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingMarkerView.xib; sourceTree = "<group>"; };
+		A1BFC733229772BE00D79593 /* PlayerMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerMarkerView.xib; sourceTree = "<group>"; };
+		A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedParkingMarkerView.xib; sourceTree = "<group>"; };
 		F1839212FD4733BDA85004CD /* Pods-FlanelinhaParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				4157A12D22797F44008657A2 /* AppDelegate.swift */,
+				A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,6 +170,11 @@
 		A14B9B472292045D00E9E0DE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A1BFC70F229731CD00D79593 /* AboutViewController.swift */,
+				A1BFC711229731FA00D79593 /* MapViewController.swift */,
+				A1BFC7132297324A00D79593 /* ProfileViewController.swift */,
+				A1BFC7152297339200D79593 /* VehiclesViewController.swift */,
+				A1BFC7172297341A00D79593 /* VehicleViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -137,6 +183,14 @@
 			isa = PBXGroup;
 			children = (
 				A14B9B4B229204D800E9E0DE /* Cells */,
+				A1BFC7212297353700D79593 /* CurrentLocationMarkerView.swift */,
+				A1BFC7232297356700D79593 /* ParkingMarkerView.swift */,
+				A1BFC7252297375C00D79593 /* PlayerMarkerView.swift */,
+				A1BFC727229737AE00D79593 /* SelectedParkingMarkerView.swift */,
+				A1BFC729229737DC00D79593 /* VehicleTableViewCell.swift */,
+				A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */,
+				A1BFC733229772BE00D79593 /* PlayerMarkerView.xib */,
+				A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +206,9 @@
 		A14B9B4A2292048800E9E0DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1BFC7092297307700D79593 /* Location.swift */,
+				A1BFC70B2297314500D79593 /* Player.swift */,
+				A1BFC70D2297317800D79593 /* Vehicle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +216,9 @@
 		A14B9B4B229204D800E9E0DE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A1BFC71B229734A600D79593 /* LocationTableViewCell.swift */,
+				A1BFC71D229734DA00D79593 /* OptionCollectionViewCell.swift */,
+				A1BFC71F229734FF00D79593 /* ParkingCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -232,7 +292,10 @@
 			files = (
 				4157A13B22797F47008657A2 /* LaunchScreen.storyboard in Resources */,
 				4157A13822797F47008657A2 /* Assets.xcassets in Resources */,
+				A1BFC736229772EF00D79593 /* SelectedParkingMarkerView.xib in Resources */,
 				4157A13322797F44008657A2 /* Main.storyboard in Resources */,
+				A1BFC734229772BE00D79593 /* PlayerMarkerView.xib in Resources */,
+				A1BFC7302297412400D79593 /* ParkingMarkerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,9 +331,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BFC70E2297317800D79593 /* Vehicle.swift in Sources */,
+				A1BFC72C22973C1600D79593 /* UIViewController+CoreData.swift in Sources */,
+				A1BFC71E229734DA00D79593 /* OptionCollectionViewCell.swift in Sources */,
+				A1BFC7262297375C00D79593 /* PlayerMarkerView.swift in Sources */,
+				A1BFC7182297341A00D79593 /* VehicleViewController.swift in Sources */,
 				4157A13022797F44008657A2 /* ViewController.swift in Sources */,
 				4157A13622797F44008657A2 /* FlanelinhaParking.xcdatamodeld in Sources */,
+				A1BFC72A229737DC00D79593 /* VehicleTableViewCell.swift in Sources */,
+				A1BFC710229731CD00D79593 /* AboutViewController.swift in Sources */,
+				A1BFC70A2297307800D79593 /* Location.swift in Sources */,
+				A1BFC71C229734A600D79593 /* LocationTableViewCell.swift in Sources */,
+				A1BFC70C2297314500D79593 /* Player.swift in Sources */,
+				A1BFC7142297324A00D79593 /* ProfileViewController.swift in Sources */,
 				4157A12E22797F44008657A2 /* AppDelegate.swift in Sources */,
+				A1BFC7242297356700D79593 /* ParkingMarkerView.swift in Sources */,
+				A1BFC7222297353700D79593 /* CurrentLocationMarkerView.swift in Sources */,
+				A1BFC728229737AE00D79593 /* SelectedParkingMarkerView.swift in Sources */,
+				A1BFC720229734FF00D79593 /* ParkingCollectionViewCell.swift in Sources */,
+				A1BFC712229731FA00D79593 /* MapViewController.swift in Sources */,
+				A1BFC7162297339200D79593 /* VehiclesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
