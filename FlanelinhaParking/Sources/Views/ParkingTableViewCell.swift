@@ -11,6 +11,7 @@ import UIKit
 class ParkingTableViewCell: UITableViewCell {
     
     @IBOutlet weak var parkingNameLabel: UILabel!
-    @IBOutlet weak var parkingAddressLabel: UILabel!
+	@IBOutlet weak var parkingCNPJLabel: UILabel!
+	@IBOutlet weak var parkingAddressLabel: UILabel!
     
 }

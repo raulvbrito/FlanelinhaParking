@@ -16,7 +16,7 @@ class LocationTableViewCell: UITableViewCell {
     @IBOutlet weak var parkingSymbolView: UIView!
     @IBOutlet weak var parkingSymbolLabel: UILabel!
     @IBOutlet weak var affiliateParkingSymbolView: UIView!
-    @IBOutlet weak var affiliateParkingSymboleLabel: UILabel!
+    @IBOutlet weak var affiliateParkingSymbolLabel: UILabel!
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

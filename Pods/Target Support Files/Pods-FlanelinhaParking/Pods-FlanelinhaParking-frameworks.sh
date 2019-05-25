@@ -163,6 +163,9 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MapboxDirections.swift/MapboxDirections.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MapboxGeocoder.swift/MapboxGeocoder.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tailor/Tailor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
@@ -170,6 +173,9 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MapboxDirections.swift/MapboxDirections.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MapboxGeocoder.swift/MapboxGeocoder.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tailor/Tailor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"

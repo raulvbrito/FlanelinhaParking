@@ -56,12 +56,17 @@ extension ParkingsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fetchedResultsController.fetchedObjects?.count ?? 0
     }
+	
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		return 86
+	}
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ParkingTableViewCell", for: indexPath) as? ParkingTableViewCell
         
         let parking = fetchedResultsController.object(at: indexPath)
         cell?.parkingNameLabel.text = parking.name
+        cell?.parkingCNPJLabel.text = parking.cnpj
         cell?.parkingAddressLabel.text = parking.address
         
         return cell!

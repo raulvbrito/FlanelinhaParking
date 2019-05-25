@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "01ED0F808EB52467990528FF9C281D93"
-               BuildableName = "Pods_FlanelinhaParking.framework"
-               BlueprintName = "Pods-FlanelinhaParking"
+               BlueprintIdentifier = "5BED23170308F31956246E589532254E"
+               BuildableName = "MapboxGeocoder.framework"
+               BlueprintName = "MapboxGeocoder.swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "01ED0F808EB52467990528FF9C281D93"
-            BuildableName = "Pods_FlanelinhaParking.framework"
-            BlueprintName = "Pods-FlanelinhaParking"
+            BlueprintIdentifier = "5BED23170308F31956246E589532254E"
+            BuildableName = "MapboxGeocoder.framework"
+            BlueprintName = "MapboxGeocoder.swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

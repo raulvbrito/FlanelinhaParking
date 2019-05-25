@@ -15,13 +15,15 @@ class ParkingViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
-    
+	@IBOutlet weak var cnpjTextField: UITextField!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let parking = parking {
             nameTextField.text = parking.name
             addressTextField.text = parking.address
+            cnpjTextField.text = parking.cnpj
         }
     }
     
@@ -31,6 +33,7 @@ class ParkingViewController: UIViewController {
         }
         parking?.name = nameTextField.text
         parking?.address = addressTextField.text
+        parking?.cnpj = cnpjTextField.text
         
         do {
             try context.save()

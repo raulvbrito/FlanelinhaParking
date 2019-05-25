@@ -12,7 +12,7 @@ import Firebase
 import GoogleMaps
 import GooglePlaces
 
-let googleApiKey = "AIzaSyB5DlfbduHVevhhzEu9umOjWBefUrQMWRw"
+let googleApiKey = "AIzaSyARYQ7ZavXasWIthUJHFt8RgJQPRiHPRko"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,22 +27,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        //        if #available(iOS 10.0, *) {
-        //              // For iOS 10 display notification (sent via APNS)
-        //            NotificationCenter.current().delegate = self
-        //
-        //              let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-        //            NotificationCenter.current().requestAuthorization(options: authOptions, completionHandler: {_, _ in })
-        //        } else {
-        //              let settings: UIUserNotificationSettings =
-        //              UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-        //              application.registerUserNotificationSettings(settings)
-        //        }
-        //
-        //        application.registerForRemoteNotifications()
-        //
-        //        Messaging.messaging().delegate = self
-        
+		if #available(iOS 10.0, *) {
+			  // For iOS 10 display notification (sent via APNS)
+//			NotificationCenter.current().delegate = self
+//
+//			  let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+//			NotificationCenter.current().requestAuthorization(options: authOptions, completionHandler: {_, _ in })
+		} else {
+			  let settings: UIUserNotificationSettings =
+			  UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+			  application.registerUserNotificationSettings(settings)
+		}
+
+		application.registerForRemoteNotifications()
+
+//		Messaging.messaging().delegate = self
+		
         return true
     }
     
@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
          */
-        let container = NSPersistentContainer(name: "Flanelinha")
+        let container = NSPersistentContainer(name: "FlanelinhaParking")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

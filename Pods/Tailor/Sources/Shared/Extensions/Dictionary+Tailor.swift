@@ -61,7 +61,7 @@ public extension Dictionary {
     }
 
     if let value: String = property(name) {
-      if let firstCharacter = value.characters.first, value.characters.count > 1 {
+      if let firstCharacter = value.first, value.count > 1 {
         return Int(String(firstCharacter))
       }
 

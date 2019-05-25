@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25131FB078FA7EF937A3D8CC /* Pods_FlanelinhaParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC382D27D3F6F430E688335 /* Pods_FlanelinhaParking.framework */; };
+		2F5ACA87FB2A4908322F6B97 /* Pods_FlanelinhaParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AD27BF03787D82D0B88C6D /* Pods_FlanelinhaParking.framework */; };
+		4123609C22999F0200C813A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4123609B22999F0200C813A8 /* GoogleService-Info.plist */; };
+		4123609E2299B0FF00C813A8 /* ParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4123609D2299A4BD00C813A8 /* ParkingMarkerView.xib */; };
 		4157A12E22797F44008657A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157A12D22797F44008657A2 /* AppDelegate.swift */; };
 		4157A13022797F44008657A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157A12F22797F44008657A2 /* ViewController.swift */; };
 		4157A13322797F44008657A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4157A13122797F44008657A2 /* Main.storyboard */; };
 		4157A13622797F44008657A2 /* FlanelinhaParking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4157A13422797F44008657A2 /* FlanelinhaParking.xcdatamodeld */; };
 		4157A13822797F47008657A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4157A13722797F47008657A2 /* Assets.xcassets */; };
 		4157A13B22797F47008657A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4157A13922797F47008657A2 /* LaunchScreen.storyboard */; };
-		A1AF60EB2298B66100609C97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1AF60EA2298B66000609C97 /* GoogleService-Info.plist */; };
 		A1BFC70A2297307800D79593 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7092297307700D79593 /* Location.swift */; };
 		A1BFC70C2297314500D79593 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC70B2297314500D79593 /* Player.swift */; };
 		A1BFC70E2297317800D79593 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC70D2297317800D79593 /* Vehicle.swift */; };
@@ -31,11 +32,13 @@
 		A1BFC728229737AE00D79593 /* SelectedParkingMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC727229737AE00D79593 /* SelectedParkingMarkerView.swift */; };
 		A1BFC72A229737DC00D79593 /* ParkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC729229737DC00D79593 /* ParkingTableViewCell.swift */; };
 		A1BFC72C22973C1600D79593 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */; };
-		A1BFC7302297412400D79593 /* ParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */; };
 		A1BFC736229772EF00D79593 /* SelectedParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32D4E37676E08ACB0D127D80 /* Pods-FlanelinhaParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.release.xcconfig"; path = "Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.release.xcconfig"; sourceTree = "<group>"; };
+		4123609B22999F0200C813A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4123609D2299A4BD00C813A8 /* ParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ParkingMarkerView.xib; path = ../../../../Flanelinha/Flanelinha/Sources/Views/ParkingMarkerView.xib; sourceTree = "<group>"; };
 		4157A12A22797F44008657A2 /* FlanelinhaParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlanelinhaParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4157A12D22797F44008657A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4157A12F22797F44008657A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,9 +47,8 @@
 		4157A13722797F47008657A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4157A13A22797F47008657A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4157A13C22797F47008657A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BA358310534C353CE2D0EB9 /* Pods-FlanelinhaParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.release.xcconfig"; sourceTree = "<group>"; };
-		7CC382D27D3F6F430E688335 /* Pods_FlanelinhaParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlanelinhaParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1AF60EA2298B66000609C97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		687D41ADA67208372F3D4D9B /* Pods-FlanelinhaParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.debug.xcconfig"; path = "Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.debug.xcconfig"; sourceTree = "<group>"; };
+		90AD27BF03787D82D0B88C6D /* Pods_FlanelinhaParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlanelinhaParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BFC7092297307700D79593 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A1BFC70B2297314500D79593 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A1BFC70D2297317800D79593 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -63,9 +65,7 @@
 		A1BFC727229737AE00D79593 /* SelectedParkingMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedParkingMarkerView.swift; sourceTree = "<group>"; };
 		A1BFC729229737DC00D79593 /* ParkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTableViewCell.swift; sourceTree = "<group>"; };
 		A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
-		A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingMarkerView.xib; sourceTree = "<group>"; };
 		A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedParkingMarkerView.xib; sourceTree = "<group>"; };
-		F1839212FD4733BDA85004CD /* Pods-FlanelinhaParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,29 +73,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25131FB078FA7EF937A3D8CC /* Pods_FlanelinhaParking.framework in Frameworks */,
+				2F5ACA87FB2A4908322F6B97 /* Pods_FlanelinhaParking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A2276C64CF7A11C35DE11BD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F1839212FD4733BDA85004CD /* Pods-FlanelinhaParking.debug.xcconfig */,
-				6BA358310534C353CE2D0EB9 /* Pods-FlanelinhaParking.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4157A12122797F44008657A2 = {
 			isa = PBXGroup;
 			children = (
 				4157A12C22797F44008657A2 /* FlanelinhaParking */,
 				4157A12B22797F44008657A2 /* Products */,
-				2A2276C64CF7A11C35DE11BD /* Pods */,
-				D6C2CC60DEB3A6C80378718E /* Frameworks */,
+				E7CF2DBFC9E091644647D2D4 /* Pods */,
+				B9B64D446774B9A36E29966E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				4157A13722797F47008657A2 /* Assets.xcassets */,
-				A1AF60EA2298B66000609C97 /* GoogleService-Info.plist */,
+				4123609B22999F0200C813A8 /* GoogleService-Info.plist */,
 				4157A13C22797F47008657A2 /* Info.plist */,
 				A14B9B42229203CD00E9E0DE /* Resources */,
 				A14B9B43229203DB00E9E0DE /* Sources */,
@@ -184,9 +175,9 @@
 				A14B9B4B229204D800E9E0DE /* Cells */,
 				A1BFC7212297353700D79593 /* CurrentLocationMarkerView.swift */,
 				A1BFC7232297356700D79593 /* ParkingMarkerView.swift */,
-				A1BFC727229737AE00D79593 /* SelectedParkingMarkerView.swift */,
+				4123609D2299A4BD00C813A8 /* ParkingMarkerView.xib */,
 				A1BFC729229737DC00D79593 /* ParkingTableViewCell.swift */,
-				A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */,
+				A1BFC727229737AE00D79593 /* SelectedParkingMarkerView.swift */,
 				A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */,
 			);
 			path = Views;
@@ -220,12 +211,21 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		D6C2CC60DEB3A6C80378718E /* Frameworks */ = {
+		B9B64D446774B9A36E29966E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7CC382D27D3F6F430E688335 /* Pods_FlanelinhaParking.framework */,
+				90AD27BF03787D82D0B88C6D /* Pods_FlanelinhaParking.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7CF2DBFC9E091644647D2D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				687D41ADA67208372F3D4D9B /* Pods-FlanelinhaParking.debug.xcconfig */,
+				32D4E37676E08ACB0D127D80 /* Pods-FlanelinhaParking.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,12 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4157A13F22797F47008657A2 /* Build configuration list for PBXNativeTarget "FlanelinhaParking" */;
 			buildPhases = (
-				47BF031026FA08F080516568 /* [CP] Check Pods Manifest.lock */,
+				7D119FD8AC607ED3EFC2CE01 /* [CP] Check Pods Manifest.lock */,
 				4157A12622797F44008657A2 /* Sources */,
 				4157A12722797F44008657A2 /* Frameworks */,
 				4157A12822797F44008657A2 /* Resources */,
-				35C17E8E1AC4129A747D4C78 /* [CP] Embed Pods Frameworks */,
-				74EFBEBC06F698840DF165B0 /* [CP] Copy Pods Resources */,
+				6C16C219FC45963D61B64A75 /* [CP] Embed Pods Frameworks */,
+				4FA27B2023799E07B73D188D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,16 +292,33 @@
 				4157A13B22797F47008657A2 /* LaunchScreen.storyboard in Resources */,
 				4157A13822797F47008657A2 /* Assets.xcassets in Resources */,
 				A1BFC736229772EF00D79593 /* SelectedParkingMarkerView.xib in Resources */,
+				4123609E2299B0FF00C813A8 /* ParkingMarkerView.xib in Resources */,
 				4157A13322797F44008657A2 /* Main.storyboard in Resources */,
-				A1BFC7302297412400D79593 /* ParkingMarkerView.xib in Resources */,
-				A1AF60EB2298B66100609C97 /* GoogleService-Info.plist in Resources */,
+				4123609C22999F0200C813A8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35C17E8E1AC4129A747D4C78 /* [CP] Embed Pods Frameworks */ = {
+		4FA27B2023799E07B73D188D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C16C219FC45963D61B64A75 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,7 +335,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		47BF031026FA08F080516568 /* [CP] Check Pods Manifest.lock */ = {
+		7D119FD8AC607ED3EFC2CE01 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,23 +355,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		74EFBEBC06F698840DF165B0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -528,11 +528,11 @@
 		};
 		4157A14022797F47008657A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1839212FD4733BDA85004CD /* Pods-FlanelinhaParking.debug.xcconfig */;
+			baseConfigurationReference = 687D41ADA67208372F3D4D9B /* Pods-FlanelinhaParking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KKMX66NGA5;
+				DEVELOPMENT_TEAM = LFG72U4M9F;
 				INFOPLIST_FILE = FlanelinhaParking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -547,11 +547,11 @@
 		};
 		4157A14122797F47008657A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BA358310534C353CE2D0EB9 /* Pods-FlanelinhaParking.release.xcconfig */;
+			baseConfigurationReference = 32D4E37676E08ACB0D127D80 /* Pods-FlanelinhaParking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KKMX66NGA5;
+				DEVELOPMENT_TEAM = LFG72U4M9F;
 				INFOPLIST_FILE = FlanelinhaParking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

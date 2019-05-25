@@ -19,17 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1zz-qa-8rP">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="906"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1zz-qa-8rP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E2I-S7-2pv"/>
-                            <constraint firstItem="1zz-qa-8rP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Epl-nK-LCv"/>
                             <constraint firstItem="1zz-qa-8rP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L1J-la-VN8"/>
                             <constraint firstItem="1zz-qa-8rP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Nhf-XW-8jg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1zz-qa-8rP" secondAttribute="bottom" id="XoS-Qw-np0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zz-qa-8rP" secondAttribute="trailing" id="tYg-hk-EpD"/>
+                            <constraint firstItem="1zz-qa-8rP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="URW-aT-M3L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

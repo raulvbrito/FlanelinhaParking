@@ -12,6 +12,8 @@ target 'FlanelinhaParking' do
   pod 'Firebase/Database'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'MapboxDirections.swift'
+  pod 'MapboxGeocoder.swift'
   pod 'Tailor'
 
 end
