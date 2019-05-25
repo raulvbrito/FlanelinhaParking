@@ -14,6 +14,7 @@
 		4157A13622797F44008657A2 /* FlanelinhaParking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4157A13422797F44008657A2 /* FlanelinhaParking.xcdatamodeld */; };
 		4157A13822797F47008657A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4157A13722797F47008657A2 /* Assets.xcassets */; };
 		4157A13B22797F47008657A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4157A13922797F47008657A2 /* LaunchScreen.storyboard */; };
+		A1AF60EB2298B66100609C97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1AF60EA2298B66000609C97 /* GoogleService-Info.plist */; };
 		A1BFC70A2297307800D79593 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC7092297307700D79593 /* Location.swift */; };
 		A1BFC70C2297314500D79593 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC70B2297314500D79593 /* Player.swift */; };
 		A1BFC70E2297317800D79593 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC70D2297317800D79593 /* Vehicle.swift */; };
@@ -32,7 +33,6 @@
 		A1BFC72C22973C1600D79593 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */; };
 		A1BFC7302297412400D79593 /* ParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */; };
 		A1BFC736229772EF00D79593 /* SelectedParkingMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */; };
-		A1BFC73822983F5900D79593 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1BFC73722983F5800D79593 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +46,7 @@
 		4157A13C22797F47008657A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA358310534C353CE2D0EB9 /* Pods-FlanelinhaParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.release.xcconfig"; sourceTree = "<group>"; };
 		7CC382D27D3F6F430E688335 /* Pods_FlanelinhaParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlanelinhaParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AF60EA2298B66000609C97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1BFC7092297307700D79593 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A1BFC70B2297314500D79593 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A1BFC70D2297317800D79593 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		A1BFC72B22973C1600D79593 /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
 		A1BFC72F2297412400D79593 /* ParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingMarkerView.xib; sourceTree = "<group>"; };
 		A1BFC735229772EF00D79593 /* SelectedParkingMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedParkingMarkerView.xib; sourceTree = "<group>"; };
-		A1BFC73722983F5800D79593 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1839212FD4733BDA85004CD /* Pods-FlanelinhaParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlanelinhaParking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlanelinhaParking/Pods-FlanelinhaParking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				4157A13722797F47008657A2 /* Assets.xcassets */,
-				A1BFC73722983F5800D79593 /* GoogleService-Info.plist */,
+				A1AF60EA2298B66000609C97 /* GoogleService-Info.plist */,
 				4157A13C22797F47008657A2 /* Info.plist */,
 				A14B9B42229203CD00E9E0DE /* Resources */,
 				A14B9B43229203DB00E9E0DE /* Sources */,
@@ -294,7 +294,7 @@
 				A1BFC736229772EF00D79593 /* SelectedParkingMarkerView.xib in Resources */,
 				4157A13322797F44008657A2 /* Main.storyboard in Resources */,
 				A1BFC7302297412400D79593 /* ParkingMarkerView.xib in Resources */,
-				A1BFC73822983F5900D79593 /* GoogleService-Info.plist in Resources */,
+				A1AF60EB2298B66100609C97 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

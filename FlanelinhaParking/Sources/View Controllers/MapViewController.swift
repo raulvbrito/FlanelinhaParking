@@ -127,13 +127,10 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
-        let backIconImage = UIImage(named: "back_icon")
-        let tintedImage = backIconImage?.withRenderingMode(.alwaysTemplate)
-        backButton.setImage(tintedImage, for: .normal)
-        backButton.tintColor = .white
+       
         
         configureMapStyle()
-        createPanGestureRecognizer(targetView: locationListView)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -173,89 +170,6 @@ class MapViewController: UIViewController {
         currentLocationMarker.map = mapView
         currentLocationMarker.appearAnimation = GMSMarkerAnimation.pop
         
-        parkingMarkerView.priceLabel.text = "R$ " + String(Int.random(in: 10..<30)) + "," + String(Int.random(in: 00..<99))
-        parkingMarker.iconView = parkingMarkerView
-        parkingMarker.map = mapView
-        parkingMarker.appearAnimation = GMSMarkerAnimation.pop
-        
-        parkingMarkerView.priceLabel.text = "R$ " + String(Int.random(in: 10..<30)) + "," + String(Int.random(in: 00..<99))
-        parkingMarker2.iconView = parkingMarkerView
-        parkingMarker2.map = mapView
-        parkingMarker2.appearAnimation = GMSMarkerAnimation.pop
-        
-        parkingMarkerView.priceLabel.text = "R$ " + String(Int.random(in: 10..<30)) + "," + String(Int.random(in: 00..<99))
-        parkingMarker3.iconView = parkingMarkerView
-        parkingMarker3.map = mapView
-        parkingMarker3.appearAnimation = GMSMarkerAnimation.pop
-        
-        parkingMarkerView.priceLabel.text = "R$ " + String(Int.random(in: 10..<30)) + "," + String(Int.random(in: 00..<99)) + "/h"
-        parkingMarker4.iconView = parkingMarkerView
-        parkingMarker4.map = mapView
-        parkingMarker4.appearAnimation = GMSMarkerAnimation.pop
-        
-        selectedParkingMarker.iconView = selectedParkingMarkerView
-        selectedParkingMarker.map = mapView
-        selectedParkingMarker.appearAnimation = GMSMarkerAnimation.pop
-    }
-    
-    
-    
-    func createPanGestureRecognizer(targetView: UIView) {
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.handlePanGesture(panGesture:)))
-        targetView.addGestureRecognizer(panGesture)
-    }
-    
-    @objc func handlePanGesture(panGesture: UIPanGestureRecognizer) {
-        self.searchTextField.resignFirstResponder()
-        
-        let translation = panGesture.translation(in: view)
-        panGesture.setTranslation(CGPoint.zero, in: view)
-        
-        locationListView.layoutIfNeeded()
-        self.view.layoutIfNeeded()
-        
-        translationY = translation.y
-        
-        if self.lastDragged < translation.y && self.locationListViewTopConstraint.constant >= 0 {
-            translationY = 0.0
-        }
-        
-        if panGesture.state == UIGestureRecognizer.State.began {
-            //            print(panGesture)
-        }
-        
-        if panGesture.state == UIGestureRecognizer.State.ended {
-            UIView.animate(withDuration: 0.2, delay: 0, animations: {
-                if self.locationListViewTopConstraint.constant >= 200 {
-                    self.locationListViewTopConstraint.constant = 550
-                    self.locationListViewLeadingConstraint.constant = 10
-                } else {
-                    self.locationListViewTopConstraint.constant = 0
-                    self.locationListViewLeadingConstraint.constant = 0
-                }
-                
-                self.locationListView.layoutIfNeeded()
-                self.view.layoutIfNeeded()
-            }, completion: nil)
-        }
-        
-        if panGesture.state == UIGestureRecognizer.State.changed {
-            print(panGesture)
-            
-            self.locationListViewTopConstraint.constant += translation.y
-            self.locationListViewLeadingConstraint.constant += translation.y/30
-            
-            //            UIView.animate(withDuration: 0.01, delay: 0, animations: {
-            ////                self.locationsViewTopShadow.alpha -= translation.y/100
-            //
-            //                self.locationListView.layoutIfNeeded()
-            //                self.view.layoutIfNeeded()
-            //            }, completion: nil)
-            
-            self.lastDragged = translation.y
-        } else {
-            
-        }
     }
     
     

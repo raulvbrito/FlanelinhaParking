@@ -188,13 +188,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qs-Yt-oHq">
                                 <rect key="frame" x="351" y="634" width="40" height="40"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZC-PY-15c">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <state key="normal" image="my_location"/>
+                                        <connections>
+                                            <action selector="goToMyLocation:" destination="fRE-zy-HWX" eventType="touchUpInside" id="cNf-2i-ahk"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_location" translatesAutoresizingMaskIntoConstraints="NO" id="QUW-O8-YPY" userLabel="my_location">
                                         <rect key="frame" x="10" y="10" width="20" height="20"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZC-PY-15c">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -218,6 +221,7 @@
                                 </constraints>
                                 <state key="normal" image="profile_icon"/>
                                 <connections>
+                                    <action selector="profile:" destination="fRE-zy-HWX" eventType="touchUpInside" id="yXk-rB-s3v"/>
                                     <segue destination="Imw-yP-dFF" kind="presentation" id="SLU-41-9H2"/>
                                 </connections>
                             </button>
@@ -331,14 +335,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D7p-89-ewc" userLabel="Search View">
                                 <rect key="frame" x="24" y="104" width="366" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciJ-wL-Jii" userLabel="Location Type Label">
-                                        <rect key="frame" x="49" y="8" width="63" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciJ-wL-Jii" userLabel="Location Type Label">
+                                        <rect key="frame" x="49" y="8" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLU-oU-FSz" userLabel="Address Label">
-                                        <rect key="frame" x="49" y="31.5" width="43" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLU-oU-FSz" userLabel="Address Label">
+                                        <rect key="frame" x="49" y="52" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -430,6 +434,30 @@
                         <viewLayoutGuide key="safeArea" id="9tD-DA-lqV"/>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="SLU-oU-FSz" id="nWd-hn-4Of"/>
+                        <outlet property="addressLabelBottomConstraint" destination="tQQ-28-M2e" id="jE9-qU-Oxp"/>
+                        <outlet property="collectionView" destination="5ih-im-5AJ" id="e0d-K0-Bfx"/>
+                        <outlet property="collectionViewBottomConstraint" destination="fDR-pG-ulP" id="X3I-sX-i9w"/>
+                        <outlet property="loadingView" destination="Jzy-U6-7T6" id="pJC-65-5wY"/>
+                        <outlet property="loadingViewLeadingConstraint" destination="ngg-xM-k7K" id="azo-2G-k1R"/>
+                        <outlet property="loadingViewTopConstraint" destination="7EO-jp-Wre" id="Rcq-tx-fOK"/>
+                        <outlet property="locationListView" destination="GPD-04-bGX" id="h8g-gY-LQQ"/>
+                        <outlet property="locationListViewHeightConstraint" destination="4oN-ty-6eu" id="8wu-6W-d4U"/>
+                        <outlet property="locationListViewLeadingConstraint" destination="lIc-bF-Kgt" id="dum-P0-xdG"/>
+                        <outlet property="locationListViewTopConstraint" destination="05d-cG-xfJ" id="cOA-ac-o5S"/>
+                        <outlet property="locationTableView" destination="HzU-G4-rK3" id="F2w-LZ-jRT"/>
+                        <outlet property="locationTypeLabel" destination="ciJ-wL-Jii" id="pn9-ut-PIs"/>
+                        <outlet property="locationTypeLabelTopConstraint" destination="dYV-nA-eeu" id="shR-0n-e60"/>
+                        <outlet property="mapView" destination="qLQ-hZ-bOA" id="Ttw-dE-yIb"/>
+                        <outlet property="profileButton" destination="hm1-P6-T3U" id="lUn-eF-AQr"/>
+                        <outlet property="pulsingView" destination="sUz-Br-bcM" id="iiE-dp-u0M"/>
+                        <outlet property="pulsingViewLeadingConstraint" destination="NnO-Zw-pdI" id="WSm-Lm-nts"/>
+                        <outlet property="searchTextField" destination="HtG-WH-xhJ" id="HNQ-Zp-PgN"/>
+                        <outlet property="searchTextFieldBottomConstraint" destination="tQQ-28-M2e" id="eTf-RZ-2Or"/>
+                        <outlet property="searchTextFieldHeightConstraint" destination="Qup-iP-nTJ" id="PxJ-m1-dH7"/>
+                        <outlet property="searchTextFieldLeadingConstraint" destination="7NM-q3-QRk" id="mOp-ex-n8A"/>
+                        <outlet property="searchTextFieldTopConstraint" destination="dYV-nA-eeu" id="n7u-kF-WxY"/>
+                        <outlet property="searchView" destination="D7p-89-ewc" id="5hn-D8-U89"/>
                         <segue destination="wBO-kv-L76" kind="show" id="E41-kg-aoP"/>
                         <segue destination="kKW-55-p3g" kind="presentation" id="65e-BH-cEn"/>
                     </connections>
@@ -451,6 +479,9 @@
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="close:" destination="Imw-yP-dFF" eventType="touchUpInside" id="09Z-fH-X0A"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MR4-qM-bqH" userLabel="Title Label">
                                 <rect key="frame" x="170.5" y="65" width="73" height="20.5"/>
@@ -483,12 +514,18 @@
                                 <state key="normal" title="Cadastrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="Imw-yP-dFF" eventType="touchUpInside" id="UyG-ZP-hMS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqK-Ae-tAW" userLabel="Login Toggle Button">
                                 <rect key="frame" x="16" y="306" width="120" height="30"/>
                                 <state key="normal" title="Mudar para Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="toggleLogin:" destination="Imw-yP-dFF" eventType="touchUpInside" id="Eem-Bh-WdD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -507,6 +544,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FKu-Ma-5cy"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Fy5-Ef-Gml" id="YzS-gM-vmh"/>
+                        <outlet property="loginButton" destination="Eon-gV-2DT" id="J8H-4K-r02"/>
+                        <outlet property="loginToggleButton" destination="IqK-Ae-tAW" id="e3O-dc-Wm8"/>
+                        <outlet property="passwordTextField" destination="xTg-Jm-pgd" id="gYn-of-Fg4"/>
+                        <outlet property="titleLabel" destination="MR4-qM-bqH" id="9gC-gO-FWc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfK-m0-IMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -563,13 +607,21 @@
                     </view>
                     <navigationItem key="navigationItem" title="Estacionamentos" id="GRf-Ng-HHy">
                         <barButtonItem key="backBarButtonItem" title="Mapa" id="jVN-eH-zES"/>
-                        <barButtonItem key="leftBarButtonItem" title="Fechar" id="kvy-fV-ZZ0"/>
+                        <barButtonItem key="leftBarButtonItem" title="Fechar" id="kvy-fV-ZZ0">
+                            <connections>
+                                <action selector="close:" destination="vKl-U0-KB1" id="KTc-5W-TX2"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="UND-RY-2DX">
                             <connections>
+                                <action selector="addVehicle:" destination="vKl-U0-KB1" id="uyB-WP-q7N"/>
                                 <segue destination="4Af-bg-1mk" kind="show" id="haS-qP-EdH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Fes-HK-Pgq" id="QA5-yb-ESL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewX-Jf-iAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -614,8 +666,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Estacionamento" id="Uji-Nw-Ka1">
                         <barButtonItem key="backBarButtonItem" title="Estacionamentos" id="toZ-su-Bhs"/>
-                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="s9Q-em-nlk"/>
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="s9Q-em-nlk">
+                            <connections>
+                                <action selector="save:" destination="4Af-bg-1mk" id="sjG-nl-xvd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addressTextField" destination="Jjc-Ac-XNK" id="lVI-Vl-Oci"/>
+                        <outlet property="nameTextField" destination="br9-de-Cy1" id="rpz-EK-Ndq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSB-IW-kWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -641,6 +701,9 @@
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="close:" destination="kKW-55-p3g" eventType="touchUpInside" id="RvX-Ht-FOr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feito Por:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdQ-m1-vg7" userLabel="Feito Por:">
                                 <rect key="frame" x="87" y="248" width="73" height="20.5"/>
