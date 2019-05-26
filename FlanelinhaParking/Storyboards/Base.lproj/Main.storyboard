@@ -562,7 +562,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.23490907120000001" green="0.95544808979999996" blue="0.0032657124969999998" alpha="0.27268835619999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Eon-gV-2DT" firstAttribute="centerY" secondItem="MR4-qM-bqH" secondAttribute="centerY" id="4LW-OD-Aq4"/>
                             <constraint firstItem="yV7-Ex-Lz4" firstAttribute="leading" secondItem="FKu-Ma-5cy" secondAttribute="leading" constant="16" id="B0d-9N-L51"/>
@@ -805,7 +805,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natalie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeW-OB-o2c" userLabel="Natalie">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nathalie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeW-OB-o2c" userLabel="Natalie">
                                         <rect key="frame" x="0.0" y="57" width="67" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -826,7 +826,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.23490907116382828" green="0.95544808981987428" blue="0.0032657124970505587" alpha="0.27268835616438358" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KkB-Iz-lPI" firstAttribute="centerX" secondItem="eg2-WB-HA7" secondAttribute="centerX" id="He4-dU-oqk"/>
                             <constraint firstItem="3ta-nm-QfZ" firstAttribute="bottom" secondItem="2xf-ip-CVp" secondAttribute="bottom" constant="16" id="Rh3-AI-WdZ"/>
@@ -866,7 +866,7 @@
     <resources>
         <image name="back_icon" width="50" height="50"/>
         <image name="location" width="230" height="230"/>
-        <image name="logo" width="1024" height="1024"/>
+        <image name="logo" width="341" height="341"/>
         <image name="my_location" width="192" height="192"/>
         <image name="profile_icon" width="50" height="50"/>
     </resources>

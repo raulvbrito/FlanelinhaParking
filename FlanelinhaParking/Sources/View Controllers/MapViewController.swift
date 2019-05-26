@@ -3,7 +3,7 @@
 //  FlanelinhaParking
 //
 //  Created by Adriano Mendes Marinheiro on 23/05/19.
-//  Copyright © 2019 Raul Brito. All rights reserved.
+//  Copyright © 2019 Flanelinha Co. All rights reserved.
 //
 
 import UIKit
@@ -751,7 +751,7 @@ extension MapViewController: UICollectionViewDataSource, UICollectionViewDelegat
         case 1:
             self.performSegue(withIdentifier: "aboutSegue", sender: nil)
         case 2:
-            UIApplication.shared.open(URL(string: "tel://11986770136")!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: "tel://11991869707")!, options: [:], completionHandler: nil)
         case 3:
             let activityViewController = UIActivityViewController(activityItems: ["Flanelinha na App Store"], applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view

@@ -3,7 +3,7 @@
 //  FlanelinhaParking
 //
 //  Created by Raul Brito on 01/05/19.
-//  Copyright © 2019 Raul Brito. All rights reserved.
+//  Copyright © 2019 Flanelinha Co. All rights reserved.
 //
 
 import UIKit
